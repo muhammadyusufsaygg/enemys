@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Zoopark</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid red;
+        }
+        .section-title {
+            background-color: #ffff00;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .animal-images {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .animal-images img {
+            max-width: 45%;
+            height: auto;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .feedback-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .feedback-section input[type="radio"] {
+            margin: 0 10px;
+        }
+        .table-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #00cc00;
+            color: white;
+        }
+        td {
+            background-color: #0000ff;
+            color: white;
+        }
+        td:first-child {
+            background-color: #00cc00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Xush kelibsiz, Virtual Zooparkga!</h1>
+</header>
+
+<p>Bu yerda siz turli <span style="color: red;">hayvonlar</span> haqida qiziqarli ma'lumotlar topishingiz mumkin.</p>
+
+<section>
+    <h2 class="section-title">Bizning hayvonlar</h2>
+    <ul>
+        <li><span style="color: red;">Arslonlar</span> - o'rmon qirollari</li>
+        <li><span style="color: red;">Fillar</span> - yer yuzidagi eng katta quruqlik hayvonlari</li>
+    </ul>
+</section>
+
+<section>
+    <h2 class="section-title">Hayvonlar haqida qiziqarli faktlar</h2>
+    <div class="animal-images">
+        <img src="lion-tree.jpg" alt="Arslonlar daraxtda">
+        <img src="lion-sleep.jpg" alt="Yotgan arslon">
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Hayvonlarni ko'rish</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section class="feedback-section">
+    <h2>O'z fikringizni yozib qoldiring</h2>
+    <textarea rows="4" cols="50" placeholder="Fikringizni bu yerga yozing"></textarea>
+    <h3>Sevimli hayvoningiz qaysi</h3>
+    <input type="radio" id="lion" name="favorite_animal" value="Arslon">
+    <label for="lion">Arslon</label>
+    <input type="radio" id="elephant" name="favorite_animal" value="Fil">
+    <label for="elephant">Fil</label>
+    <br>
+    <button>Jo'natish</button>
+</section>
+
+<section>
+    <h2 class="section-title">Hayvonlar haqida to'liq ma'lumotlar jadvali</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Hayvon</th>
+                <th>Qiziqarli fakt</th>
+            </tr>
+            <tr>
+                <td>Arslon</td>
+                <td>Arslonlar kunning 20 soatini uyqu bilan o'tkazishadi</td>
+            </tr>
+            <tr>
+                <td>Fil</td>
+                <td>Fillar suvni o'zlarining burni bilan ichishadi</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+</body>
+</html>
